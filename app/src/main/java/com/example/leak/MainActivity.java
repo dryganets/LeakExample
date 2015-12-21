@@ -52,8 +52,7 @@ public class MainActivity extends BaseActivity {
             }
         });
 
-        if (isMarshmallow() && arePermissionsGranted()) {
-
+        if (isMarshmallow() && !arePermissionsGranted()) {
             requestPermissions(REQUIRED_PERMISSIONS, REQUEST_PERMISSIONS_CODE);
         }
 
